@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:ns1="http://example.org/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://example.org/SPIEGEL">
+    <rdf:type rdf:resource="http://example.org/Magazine"/>
+    <ns1:headquarters rdf:resource="http://example.org/Hamburg"/>
+    <ns1:language rdf:resource="http://example.org/German"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Essay">
+    <rdf:type rdf:resource="http://example.org/Document"/>
+    <ns1:hasPart rdf:resource="http://example.org/Introduction"/>
+    <ns1:hasPart rdf:resource="http://example.org/MainBody"/>
+    <ns1:hasPart rdf:resource="http://example.org/Conclusion"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Stefan">
+    <ns1:thinks rdf:resource="http://example.org/Anna"/>
+    <ns1:knows rdf:resource="http://example.org/AnnasFather"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/OlenasFriend">
+    <ns1:livesIn rdf:resource="http://example.org/Kyiv"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Pavlo">
+    <ns1:knows rdf:resource="http://example.org/Olena"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Olena">
+    <ns1:livesIn rdf:resource="http://example.org/Poltava"/>
+    <ns1:says rdf:resource="http://example.org/OlenasFriend"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Brass">
+    <rdf:type rdf:resource="http://example.org/Alloy"/>
+    <ns1:hasComponent rdf:resource="http://example.org/Copper"/>
+    <ns1:hasComponent rdf:resource="http://example.org/Zinc"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Rome">
+    <ns1:isCapitalOf rdf:resource="http://example.org/Italy"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Anna">
+    <ns1:knows rdf:resource="http://example.org/Stefan"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Ivan">
+    <ns1:knows rdf:resource="http://example.org/Rome"/>
+  </rdf:Description>
+</rdf:RDF>
